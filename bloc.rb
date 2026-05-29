@@ -10,7 +10,7 @@ class Bloc < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/arnav080/Bloc/releases/download/v0.1.0/bloc_darwin_amd64.tar.gz"
-      sha256 "5bcd752e4c8e1215e86bbf16c4dd9ba91fba75f7f4ec5d204abc34bae570d22d"
+      sha256 "aea88c6e2e940402babcc536024019979ad4e2f76fafe472e9e8bb95ddfba988"
 
       def install
         bin.install "bloc"
@@ -18,7 +18,7 @@ class Bloc < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/arnav080/Bloc/releases/download/v0.1.0/bloc_darwin_arm64.tar.gz"
-      sha256 "30f74d35bfefd50c1cfa62ddafeb803f9ed58a97de9d775945efa8386f0498bd"
+      sha256 "67b9824ff786c99324dd06bb32b82ef9bd74b5a414deaf0fa4ea15fe7910650a"
 
       def install
         bin.install "bloc"
@@ -29,14 +29,14 @@ class Bloc < Formula
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
       url "https://github.com/arnav080/Bloc/releases/download/v0.1.0/bloc_linux_amd64.tar.gz"
-      sha256 "a9f60edc12c633058a2610ea0458d51ed6e1357ff9d7b6491e17e69b222410f5"
+      sha256 "ba072ea264d8261a76c4a3f8bdfa882d48c3f585f02ff98b590cceeed07345b4"
       def install
         bin.install "bloc"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
       url "https://github.com/arnav080/Bloc/releases/download/v0.1.0/bloc_linux_arm64.tar.gz"
-      sha256 "5c8d1e3042e1b865832352310245f5081e7738f4c964bc045570b63658747fbb"
+      sha256 "0ba1f7141c01883e0052e4423a52c59863b7d8b313c1469065ab6f1b2a8468a5"
       def install
         bin.install "bloc"
       end
